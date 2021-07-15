@@ -1,0 +1,741 @@
+@font-face{
+    font-family:"Mohave";
+    src:url("../fonts/Mohave/Mohave-Regular.otf")
+}
+@font-face{
+    font-family:"MohaveBold";
+    src:url("../fonts/Mohave/MohaveBold.eot");
+    src:url("../fonts/Mohave/MohaveBold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Mohave/MohaveBold.woff2") format("woff2"),
+        url("../fonts/Mohave/MohaveBold.woff") format("woff"),
+        url("../fonts/Mohave/MohaveBold.ttf") format("truetype"),
+        url("../fonts/Mohave/MohaveBold.svg#mohavebold") format("svg")
+}
+
+body {
+    font-family:"Mohave";
+}
+
+header {
+    color: #c60c0e; /*490b00*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background: #fff;
+}
+header .wrapperHead {
+    display: flex;
+    margin: auto;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo {
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+}
+.logo img {
+    width: 200px;
+}
+header .wrapperHead .wrapMenuHead {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .wrapperHead nav {
+    margin-left: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+header .wrapperHead .siteExtras {
+    max-width: 180px;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    height: 100px;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+header .wrapperHead .siteExtras .phoneCall {
+    color: #c60c0e;
+    font-family: 'MohaveBold';
+    font-size: 28px;
+    text-decoration: none;
+}
+header .wrapperHead .siteExtras .phoneCall i {
+    margin-left: 4px;
+    transform: rotate3d(1, 1, 1, -46deg);
+}
+header .wrapperHead .siteExperiencia {
+    text-align: right;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+}
+header .wrapperHead .siteExperiencia a {
+    display: inline-flex;
+    height: 27px;
+    margin-left: 5px;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 12px;
+    align-items: center;
+    text-decoration: none;
+}
+header .wrapperHead .siteExperiencia a i{
+    margin-left: 4px;
+}
+header .wrapperHead .siteExperiencia a.btn-red:focus,
+header .wrapperHead .siteExperiencia a.btn-red:hover {
+    
+    opacity: .9;
+    color: white;
+
+}
+.btn-red {
+    background-color: #c60c0e;
+    color: white;
+}
+
+header .wrapperHead .siteExperiencia .elige {
+    display: inline-block;
+    max-width: 90px;
+    line-height: 16px;
+}
+.item-fixed {
+    position: fixed;
+    right: 0;
+    top: 102px;
+    z-index: 3;
+}
+.lnk-whatsapp a span {
+    width: 52px;
+    height: 52px;
+    background-image: url('../svgs/whatsapp.svg');
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.navbar-nav {
+    font-size: .9em;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #490b00;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: .7em;
+    margin-left: .7em;
+    max-width: 146px;
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link.active, a:hover {
+    color: #c60c0e;
+}
+.carousel-control-next, .carousel-control-prev,
+.carousel-control-next:hover, .carousel-control-prev:hover,
+.carousel-control-next:focus, .carousel-control-prev:focus {
+    color: #490b00;
+}
+.carousel-item {
+    height: 740px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+.carousel-caption {
+    top: 35%;
+}
+.carousel-caption h5 {
+    color: #033a48;
+    font-size: 3em;
+    font-weight: 800;
+    line-height: .8em;
+}
+.carousel-caption h5 span {
+    font-size: 2rem;
+}
+.carousel-caption p {
+    color: #30677B;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+.main-sections {
+    margin-top: -6.7em;
+    z-index: 9;
+    position: relative;
+}
+.main-sections .single-section {
+    box-shadow: 0 0 15px #999;
+    border-radius: 6px;
+    background-color: white;
+    padding-top: 2.5em !important;
+    overflow: hidden;
+}
+.main-sections .single-section .rounded-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #003946;
+    color: white;
+    padding-top: 15px;
+}
+.main-sections .single-section strong {
+    font-size: .7em;
+    color: #326068;
+}
+.main-sections .single-section h5 {
+    position: relative;
+    line-height: 14px;
+    color: #326068;
+}
+.main-sections .single-section h5 i {
+    width: 46px;
+    height: 2px;
+    background-color: #326068;
+}
+.main-sections .single-section p {
+    line-height: 1.3em;
+}
+.main-sections .single-section:hover, .main-sections .single-section.active {
+    background-color: #00A79C;
+    color: white;
+}
+.main-sections .single-section:hover .rounded-circle, .main-sections .single-section.active .rounded-circle {
+    background-color: #00CCBD;
+}
+.main-sections .single-section:hover h5,
+.main-sections .single-section:hover strong,
+.main-sections .single-section.active h5,
+.main-sections .single-section.active strong {
+    color: white;
+}
+.main-sections .single-section:hover h5 i,
+.main-sections .single-section.active h5 i {
+    background-color: white;
+}
+.section-about {
+    margin-top: 4em;
+}
+.section-calibracion {
+    margin-top: 4em;
+}
+.section-calibracion .single-section {
+    padding-top: 0 !important;
+}
+.section-calibracion .single-section img {
+    width: 100%;
+}
+.section-calibracion .single-section h5 {
+    font-size: 14px;
+    margin-top: 15px;
+}
+.medico-paciente {
+    margin-top: 8em;
+    margin-bottom: 8em;
+}
+.medico-paciente h2 {
+    color: #033a48;
+    font-weight: 900;
+    font-size: 2.5em;
+    line-height: 1.1em;
+}
+.medico-paciente h2 i {
+    width: 70px;
+    height: 2px;
+    background-color: #38d7ff;
+}
+.llamar-domicilio {
+    padding-top: 7em;
+    padding-bottom: 5em;
+    background-color: #033a48;
+    color: white;
+}
+.llamar-domicilio h2 {
+    font-size: 2.6em;
+    font-weight: 800;
+}
+.content-half-line .half-line {
+    display: inline-block;
+    width: 65px;
+    height: 2px;
+    background-color: #4ecbd8;
+}
+.content-half-line i {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: #4ecbd8;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+.reserva-cita {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+.reserva-cita h3 {
+    font-size: 2.6em;
+    font-weight: 800;
+    color: #033a48;
+}
+.reserva-cita .form-control {
+    border-color: #033a48;
+}
+.reserva-cita textarea.form-control {
+    border-radius: 20px;
+}
+.short-contact {
+    background-color: #00A79C;
+    color: white;
+}
+.short-contact .icons {
+    border: 2px solid white;
+    width: 60px;
+    height: 60px;
+    padding-top: 14px;
+}
+footer {
+    background: #1e1f21;
+    padding: 40px 0;
+    position: relative;
+    color: white;
+}
+footer hr {
+    background-color: white;
+    opacity: 1;
+}
+footer address p {
+    color: #AFD8DC;
+}
+footer .first-footer-link {
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 18px;
+    color: white;
+    width: 100%;
+}
+footer .first-footer-link:before {
+    content: '';
+    width: 90%;
+    height: 1px;
+    background-color: #d1d1d1;
+    display: block;
+    bottom: -7px;
+    position: absolute;
+}
+footer ul li {
+    color: #d1d1d1;
+    line-height: 1.8em;
+    font-size: .94em;
+}
+footer ul li a {
+    color: #d1d1d1;
+    line-height: 1.8em;
+    font-size: .94em;
+    text-decoration: none;
+}
+
+footer .copyright {
+    color: #4f8094
+}
+footer .copyright span {
+    color: #d1d1d1;
+}
+footer .socials a {
+    color: white;
+}
+.copyright__footer {
+    background: #490b00;
+    padding: 20px 0px;
+    position: relative;
+    color: #fff;
+    text-align: center; 
+}
+.custom-btn {
+    background-color: #c60c0e;
+    color: white;
+    border: none;
+    font-size: .9em;
+}
+.custom-btn:hover,
+.custom-btn:focus {
+    background-color: #490b00;
+    color: white;
+}
+.gradient-btn {
+    background: linear-gradient(to right, #00988D, #490b00);
+    border: none;
+    font-size: .9em;
+}
+.contactenos {
+    position: relative;
+}
+main {
+    margin-top: 100px;
+}
+.siteContent {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.title-group {
+    border-left: 8px solid #222;
+    color: #222;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    position: relative;
+}
+.title-group .main-title {
+    font-size: 2.8em;
+    font-weight: bold;
+    letter-spacing: -2px;
+    line-height: 1em;
+    text-transform: capitalize;
+    font-family: 'Mohave';
+}
+.title-group .sub-title {
+    font-size: 1.3em;
+}
+.bg-contacto {
+    background-image: url(../images/contactenos.jpg);
+    background-size: cover;
+    opacity: 0.11;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.content-contact {
+    max-width: 700px;
+    z-index: 1;
+}
+.row-equipos h5 {
+    padding: 10px;
+    min-height: 72px;
+}
+.row-equipos .col-3 {
+    min-width: auto !important;
+}
+/* Cosmetic only */
+#easyPaginate {width:300px;}
+#easyPaginate img {display:block;margin-bottom:10px;}
+.easyPaginateNav a {
+    background: #c3c3c3;
+    margin: 4px;
+    color: white;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.easyPaginateNav a.page.current {
+    background-color: gray;
+}
+.easyPaginateNav a.current {font-weight:bold;text-decoration:underline;}
+.easyPaginateNav {
+    text-align: center;
+    margin-top: 25px;
+    text-align: center;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.row-equipos .single-section img {
+    height: 215px;
+    object-fit: cover;
+}
+.row-equipos .single-section button {
+    margin-bottom: 15px;
+}
+.tablaNutricional {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    font-size: 0.7em;
+}
+.tablaNutricional .cabecera {
+    background-color: #908e93;
+    color: #fff;
+}
+.tablaNutricional .cabecera th:first-child {
+    min-width: 100px;
+    border-left: none;
+}
+.tablaNutricional .cabecera th {
+    padding: 5px;
+    border: solid 1px #fff;
+    text-align: center;
+}
+.tablaNutricional .item {
+    background-color: #e1e7cb;
+    border: solid 1px #fff;
+}
+.tablaNutricional .item td {
+    border: solid 1px #fff;
+    color: #414042;
+    padding: 2px 7px;
+}
+.tablaNutricional .item .nombre {
+    text-align: left;
+}
+.tbl-valores {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    max-width: 620px;
+}
+body.valores {
+    background-image: url(../images/bg-valores.jpg);
+    background-size: cover; 
+}
+.valores .wrapTitle {
+    background: rgba(255,255,255, .2);
+    border-radius: 5px;
+}
+.valores .wrapTitle .title-group {
+    color: #c60c0e;
+}
+.middleWrapAlergenos {
+    height: 100vh;
+    display: block;
+    min-height: 600px;
+}
+.siteContent-bg {
+    background: url(../images/cartilla-alergenos.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+img {
+    max-width: 100%;
+}
+.row-small {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.row-small-600 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.cli i {
+    color: #c60c0e;
+    margin-right: 4px;
+}
+body.pedidos .nuestra-carta{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+body.pedidos .nuestra-carta h1 {
+    margin-top: 0px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0px;
+}
+body.pedidos .nuestra-carta h1:before {
+    content: "";
+    height: 2px;
+    width: 50%;
+    left: 0;
+    margin-top: 41px;
+    background: #fff;
+    position: absolute;
+}
+body.pedidos .nuestra-carta h1:after {
+    content: "";
+    right: 0;
+    margin-top: 41px;
+    height: 2px;
+    width: 50%;
+    background: #fff;
+    position: absolute;
+}
+body.pedidos .nuestra-carta h1 span {
+    display: inline-block;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    z-index: 1;
+    padding-right: 30px;
+    padding-left: 30px;
+    position: relative;
+    background: #c60c0e;
+    letter-spacing: 12px;
+    font-size: 36px;
+}
+.bg-red {
+    background: #c60c0e;
+    color: #fff;
+}
+body.pedidos .item-image-list a {
+    color: #fff;
+    text-decoration: none;
+}
+body.pedidos .item-image-list .item {
+    display: inline-block;
+    min-height: 258px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-size: cover !important;
+}
+body.pedidos .item-image-list .item span {
+    font-size: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-transform: uppercase;
+}
+body.pedidos .item-image-list .item .linkurl {
+    position: absolute;
+    bottom: 30px;
+    opacity: 0;
+    right: 30px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+body.pedidos .item-image-list .item .fondo {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+body.pedidos .item-image-list .item:hover .fondo {
+    opacity: .8;
+    background: #490b00;
+}
+body.pedidos .item-image-list .item:hover .linkurl {
+    opacity: 1;
+    z-index: 1;
+    text-shadow: 1px 1px #500000;
+    text-decoration: none;
+}
+body.pedidos .item-image-list .item:hover .linkurl i {
+    margin-left: 15px;
+}
+body.pedidos .nuestra-carta>a {
+    float: left;
+    margin-top: -15px;
+    color: #fff;
+    text-decoration: none;
+}
+body.pedidos .nuestra-carta>a:hover {
+    text-decoration: underline;
+}
+body.trabajo .add-cv{
+    display: flex;
+    flex-direction: row;
+}
+.add-cv .formCv {
+    background: #333;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 73%;
+    height: 50px;
+}
+.add-cv .formCv .label-value {
+    color: #f2f2f2;
+    content: "Adjunta tu CV";
+    display: block;
+    line-height: 50px;
+    padding-left: 15px;
+    position: absolute;
+}
+main {
+    min-height: 609px;
+}
+body.trabajo input[type="file"] {
+    background: #fff;
+    height: 50px;
+    opacity: 0;
+    width: 100%;
+    cursor: pointer;
+}
+body.trabajo input[type="submit"] {
+    background: #c60c0e !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    height: 50px !important;
+    width: 27%;
+    text-transform: uppercase;
+}
+.maxSize {
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    max-width: 295px;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-right: 1px;
+}
+@media screen and (max-width: 767px) {
+    .navbar-light .navbar-nav .nav-link {
+        max-width: none;
+        text-align: left;
+    }
+    .carousel-item {
+        height: 360px;
+    }
+    .carousel-caption {
+        top: 15%;
+    }
+    .carousel-caption h5 {
+        font-size: 2.5em;
+    }
+    .carousel-caption h5 span {
+        font-size: 1.5rem;
+    }
+    .main-sections {
+        margin-top: 1em;
+    }
+    .row-equipos .col-3 {
+        width: 100% !important;
+    }
+    header {
+        position: relative;
+        padding-bottom: 10px;
+    }
+    header .wrapperHead {
+        flex-direction: column;
+    }
+    header nav .container-fluid {
+        justify-content: center !important;
+    }
+    header .wrapperHead .wrapMenuHead {
+        justify-content: center;
+        flex-direction: column;
+    }
+    header .wrapperHead nav {
+        height: auto;
+    }
+    .about .siteContent, 
+    .sostenible .siteContent,
+    .pedidos .siteContent {
+        padding-top: 0;
+    }
+}
